@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { CreateProductDto } from './dto/create-product.dto';
@@ -9,6 +10,7 @@ export class ProductsController {
 
   @Post()
   create(@Body() createProductDto: CreateProductDto) {
+    console.log("Vai tentar criar ", createProductDto);
     return this.productsService.create(createProductDto);
   }
 

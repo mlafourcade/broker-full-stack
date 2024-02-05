@@ -1,1 +1,10 @@
-export class CreateProductDto {}
+/* eslint-disable prettier/prettier */
+export class CreateProductDto {
+    name: string;
+
+    description: string;
+
+    image_url: string;
+    
+    price: number;
+}

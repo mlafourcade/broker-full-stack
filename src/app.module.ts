@@ -15,7 +15,9 @@ import { Product } from './products/entities/product.entity';
       username: 'root',
       password: 'root',
       database: 'nest',
-      etities: [Product]
+      entities: [Product],
+      synchronize: true,
+      logging: true
     }),
     ProductsModule
   ],
